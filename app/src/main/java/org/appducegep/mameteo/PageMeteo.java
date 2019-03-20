@@ -113,9 +113,8 @@ public class PageMeteo extends AppCompatActivity {
 
 
             MeteoDAO meteoDAO = new MeteoDAO(getApplicationContext());
-            meteoDAO.ajouterMeteo(soleilOuNuage, Integer.parseInt(humidite), vent);
-
-
+            meteoDAO.ajouterMeteo(soleilOuNuage, Integer.parseInt(humidite), vent, temperature);
+            
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SAXException e) {
